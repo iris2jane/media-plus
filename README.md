@@ -48,4 +48,4 @@ If you encounter any issues or have feature requests, please open an issue on [G
 
 [MIT License](LICENSE) 
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'O5O21D4IHW');kofiwidget2.draw();</script> 
+<a href="https://www.buymeacoffee.com/iris2jane" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
