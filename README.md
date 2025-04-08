@@ -2,7 +2,7 @@
 
 An Obsidian plugin that enhances media experience with improved subtitle display, navigation, and various media interaction features.
 
-![Media Plus](https://raw.githubusercontent.com/iris2jane/media-plus/main/screenshots/preview.gif)
+![Media Plus](https://github.com/iris2jane/media-plus/blob/master/screenshots/preview.gif)
 
 ## Features
 
