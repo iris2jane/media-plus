@@ -1,0 +1,11 @@
+{
+  "id": "media-plus",
+  "name": "Media Plus",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.7",
+  "description": "Enhanced media player with smart subtitle features, and support for various media types in Obsidian",
+  "author": "iris2jane",
+  "authorUrl": "https://github.com/iris2jane",
+  "isDesktopOnly": true,
+  "js": ["main.js"]
+} 

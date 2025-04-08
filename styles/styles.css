@@ -1,0 +1,138 @@
+/* Media Plus Styles */
+
+/* 字幕视图样式 */
+.mp-transcript-view p.select-text {
+    cursor: pointer !important;
+    transition: all 0.2s ease;
+    padding: 8px 12px;
+    margin: 4px 0;
+    border-radius: 4px;
+    border-left: 3px solid transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--background-primary-alt);
+}
+
+.mp-transcript-view p.select-text:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+.mp-transcript-view p.select-text.mp-active {
+    background-color: var(--background-modifier-hover) !important;
+    border-left-color: var(--interactive-accent) !important;
+    font-weight: 500;
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 增强高亮效果 */
+.mp-transcript-view p.select-text.mp-active::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--interactive-accent);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(-50%) scale(0.95);
+        box-shadow: 0 0 0 0 rgba(var(--interactive-accent-rgb), 0.7);
+    }
+    
+    70% {
+        transform: translateY(-50%) scale(1);
+        box-shadow: 0 0 0 6px rgba(var(--interactive-accent-rgb), 0);
+    }
+    
+    100% {
+        transform: translateY(-50%) scale(0.95);
+        box-shadow: 0 0 0 0 rgba(var(--interactive-accent-rgb), 0);
+    }
+}
+
+/* 文章模式样式 */
+.mp-transcript-view.article-mode {
+    padding: 16px;
+    line-height: 1.7;
+    border-radius: 8px;
+    background: var(--background-primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.mp-transcript-view.article-mode p.select-text {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.mp-transcript-view.article-mode p.select-text:hover {
+    background: var(--text-selection) !important;
+    border-radius: 2px;
+}
+
+.mp-transcript-view.article-mode p.select-text.mp-active {
+    background: var(--text-selection) !important;
+    border: none;
+    font-weight: normal;
+    border-radius: 2px;
+    border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* 自动生成的字幕区域 */
+.mp-auto-transcript {
+    margin-top: 4px;
+    padding: 8px 12px;
+    background: var(--background-primary);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    overflow: hidden;
+    border: 1px solid var(--background-modifier-border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    height: auto;
+    flex: 1;
+}
+
+/* 创建滚动容器 */
+.mp-transcript-content {
+    overflow-y: auto;
+    padding-top: 6px;
+    flex: 1;
+    min-height: 0;
+}
+
+/* 工具栏样式 */
+.mp-transcript-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 6px 8px;
+    background: var(--background-primary);
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+    margin-bottom: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    gap: 4px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    flex-shrink: 0;
+} 
